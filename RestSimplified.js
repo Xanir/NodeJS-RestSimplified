@@ -1,8 +1,9 @@
 var Q = require('q');
 var url = require('url');
+var http = require('http');
 var extend = require('util')._extend;
 
-var RestfulServices = function(connection, headers) {
+var RestfulService = function(connection, headers) {
 
 	if (typeof connection === 'string') {
 		connection = url.parse(connection);
@@ -71,3 +72,5 @@ var RestfulServices = function(connection, headers) {
 	};
 
 };
+
+exports.RestfulService = RestfulService;

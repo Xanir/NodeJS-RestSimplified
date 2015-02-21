@@ -15,7 +15,8 @@
     "nodejs"
   ],
   "dependencies": {
-    "q": "1.1.x"
+    "q": "1.1.x",
+	"body-parser": "1.12.x"
   },
   "devDependencies": {},
   "files": [
