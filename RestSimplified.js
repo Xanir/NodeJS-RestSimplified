@@ -34,7 +34,7 @@ var RestfulService = function(connection, headers) {
 				});
 
 				res.on('end', function() {
-					deferedHttp.resolve(res.statusCode, responseString, res.headers);
+				    deferedHttp.resolve({status: res.statusCode, response: responseString, headers: res.headers});
 				});
 			});
 			if (data) {
